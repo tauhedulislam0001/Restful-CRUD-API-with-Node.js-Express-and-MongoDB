@@ -1,0 +1,17 @@
+// start project with 
+"npm init"
+// install expressjs cmd 
+"npm i express"
+
+// install node for ignore everytime build "npm run serve" for changes update "-D" for depth dependencies
+"npm i nodemon -D"
+
+// install Mongoose Database 
+"npm i mongoose"
+
+// now connect to the database import 
+const mongoose = require('mongoose');
+
+// and then use mongoose to connect to mongoo db
+mongoose.connect('mongodb://127.0.0.1:27017/test')
+  .then(() => console.log('Connected!'));
